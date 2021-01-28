@@ -1,10 +1,9 @@
-local logs = "https://discord.com/api/webhooks/804395374315175996/B3AgSNW0iWDsz4EDEW_y2ZreG4MAOq1tZfcQ8uDfzmVZrdj49Mpu-BO-PJVzBxs20jsg"
+local logs = ""
 local communityname = "Big Yoda"
 local communtiylogo = "https://i.imgur.com/e8VsdLL.jpg" --Must end with .png or .jpg
 
 AddEventHandler('playerConnecting', function()
 local name = GetPlayerName(source)
-local ip = GetPlayerEndpoint(source)
 local ping = GetPlayerPing(source)
 local steamhex = GetPlayerIdentifier(source)
 local connect = {
@@ -24,7 +23,6 @@ end)
 
 AddEventHandler('playerDropped', function(reason)
 local name = GetPlayerName(source)
-local ip = GetPlayerEndpoint(source)
 local ping = GetPlayerPing(source)
 local steamhex = GetPlayerIdentifier(source)
 local disconnect = {
